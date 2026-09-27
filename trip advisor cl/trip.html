@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Find your next favorite place with TripShower. Explore destinations, stays, and local tables picked for curious travelers.">
+    <title>TripShower | Go where the good days are</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,500;0,600;1,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="trip.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="header-row page-width">
+            <a class="brand" href="#home" aria-label="TripShower home">
+                <span class="brand-icon" aria-hidden="true"><i></i><b></b></span>
+                <span>trip<span>shower</span></span>
+            </a>
+            <form class="quick-search" action="#places" role="search">
+                <span class="magnifier" aria-hidden="true"></span>
+                <label class="visually-hidden" for="quick-destination">Search destinations</label>
+                <input id="quick-destination" type="search" placeholder="Where do you want to go?">
+                <button type="submit" aria-label="Search destinations">Search</button>
+            </form>
+            <a class="header-action" href="#inspiration">Get inspired <span aria-hidden="true">&#8599;</span></a>
+        </div>
+        <nav class="main-nav page-width" aria-label="Main navigation">
+            <ul>
+                <li><a class="current" href="#places">Explore</a></li>
+                <li><a href="#hotels">Hotels</a></li>
+                <li><a href="#restaurants">Restaurants</a></li>
+                <li><a href="#experiences">Things to do</a></li>
+                <li><a href="#guides">Travel guides</a></li>
+            </ul>
+            <span class="nav-aside">Find a place that feels like yours.</span>
+        </nav>
+    </header>
+
+    <main id="home" class="page-width">
+        <section class="hero" aria-labelledby="hero-title">
+            <img class="hero-photo" src="https://images.unsplash.com/photo-1500534623283-312aade485b7?auto=format&fit=crop&w=2000&q=85" alt="Sunlit mountain valley and lake framed by a hiker's view">
+            <div class="hero-overlay"></div>
+            <div class="hero-copy">
+                <p class="overline"><span></span> Less scrolling. More somewhere.</p>
+                <h1 id="hero-title">Go where the<br>good days <em>are.</em></h1>
+                <p class="hero-intro">Little-known corners. Big-time memories.<br>Your next great trip starts right here.</p>
+                <a class="hero-link" href="#places">Find your somewhere <span aria-hidden="true">&#8594;</span></a>
+            </div>
+            <span class="hero-location"><span class="location-dot"></span> Dolomites, Italy <span class="location-divider">/</span> 46.4102&deg; N</span>
+            <span class="hero-index">A good place to begin <b>01 / 04</b></span>
+        </section>
+
+        <section class="planner" aria-label="Plan your trip">
+            <div class="planner-heading"><span class="planner-star" aria-hidden="true">&#10022;</span><div><strong>Make a little plan</strong><span>We'll help with the fun part.</span></div></div>
+            <form class="planner-form" action="#places">
+                <label class="planner-field destination-field"><span>I'm dreaming of</span><input type="search" placeholder="A city, beach, or somewhere new"></label>
+                <label class="planner-field"><span>Nightly budget</span><select aria-label="Nightly budget"><option value="">Any price</option><option>Under $100</option><option>$100 - $250</option><option>$250 and up</option></select></label>
+                <label class="planner-field"><span>Guest rating</span><select aria-label="Minimum guest rating"><option value="">Any rating</option><option>4+ stars</option><option>4.5+ stars</option><option>5 stars</option></select></label>
+                <button class="planner-submit" type="submit"><span class="magnifier" aria-hidden="true"></span> Show me</button>
+            </form>
+        </section>
+
+        <section class="section-block places-section" id="places" aria-labelledby="places-title">
+            <div class="section-topline"><div><p class="section-kicker">Somewhere to start</p><h2 id="places-title">Places that stay with you<span class="period">.</span></h2></div><a class="underlink" href="#experiences">See all destinations <span aria-hidden="true">&#8594;</span></a></div>
+            <div class="place-grid">
+                <a class="place-tile place-wide" href="#experiences"><img src="https://images.unsplash.com/photo-1516483638261-f4dbaf036963?auto=format&fit=crop&w=1200&q=85" alt="Colorful villages perched above the sea in Cinque Terre"><span class="tile-number">01</span><span class="tile-copy"><small>ITALY</small><strong>Cinque Terre</strong><span>For the long way round</span></span><span class="tile-arrow" aria-hidden="true">&#8599;</span></a>
+                <a class="place-tile" href="#experiences"><img src="https://images.unsplash.com/photo-1499856871958-5b9627545d1a?auto=format&fit=crop&w=900&q=85" alt="Paris rooftops beneath the Eiffel Tower at sunset"><span class="tile-number">02</span><span class="tile-copy"><small>FRANCE</small><strong>Paris</strong><span>For one more café stop</span></span><span class="tile-arrow" aria-hidden="true">&#8599;</span></a>
+                <a class="place-tile" href="#experiences"><img src="https://images.unsplash.com/photo-1518837695005-2083093ee35b?auto=format&fit=crop&w=900&q=85" alt="Turquoise ocean waves arriving on a tropical shore"><span class="tile-number">03</span><span class="tile-copy"><small>PORTUGAL</small><strong>Algarve</strong><span>For the salt in your hair</span></span><span class="tile-arrow" aria-hidden="true">&#8599;</span></a>
+            </div>
+        </section>
+
+        <section class="section-block stays-section" id="hotels" aria-labelledby="hotels-title">
+            <div class="section-topline"><div><p class="section-kicker">Sleep somewhere lovely</p><h2 id="hotels-title">Stays with a little extra<span class="period">.</span></h2></div><a class="underlink" href="#hotels">Browse all stays <span aria-hidden="true">&#8594;</span></a></div>
+            <div class="stay-grid">
+                <article class="stay-card"><a class="stay-image" href="#hotels" aria-label="Explore Casa Solana"><img src="https://images.unsplash.com/photo-1613490493576-7fde63acd811?auto=format&fit=crop&w=900&q=85" alt="Sea-view villa and infinity pool in warm evening light"><span class="heart" aria-hidden="true">&#9825;</span></a><div class="stay-info"><div class="stay-meta"><span>AMALFI COAST, ITALY</span><span class="score"><b>&#9733;</b> 4.96 <small>(214)</small></span></div><h3>Casa Solana</h3><p>Slow breakfasts above the water, with nowhere else to be.</p><div class="stay-bottom"><span><strong>$218</strong> / night</span><span class="pick">Traveler favorite</span></div></div></article>
+                <article class="stay-card"><a class="stay-image" href="#hotels" aria-label="Explore Palm House"><img src="https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=900&q=85" alt="Tropical resort pool surrounded by green palm trees"><span class="heart" aria-hidden="true">&#9825;</span></a><div class="stay-info"><div class="stay-meta"><span>UBUD, BALI</span><span class="score"><b>&#9733;</b> 4.91 <small>(168)</small></span></div><h3>Palm House</h3><p>A leafy hideaway, minutes from the morning market.</p><div class="stay-bottom"><span><strong>$146</strong> / night</span><span class="pick">Hidden gem</span></div></div></article>
+                <article class="stay-card"><a class="stay-image" href="#hotels" aria-label="Explore Northline Cabin"><img src="https://images.unsplash.com/photo-1449158743715-0a90ebb6d2d8?auto=format&fit=crop&w=900&q=85" alt="A timber cabin nestled among tall evergreen trees"><span class="heart" aria-hidden="true">&#9825;</span></a><div class="stay-info"><div class="stay-meta"><span>DOLOMITES, ITALY</span><span class="score"><b>&#9733;</b> 4.89 <small>(93)</small></span></div><h3>Northline Cabin</h3><p>Mountain air, wool blankets, and a very good view.</p><div class="stay-bottom"><span><strong>$189</strong> / night</span><span class="pick">Design pick</span></div></div></article>
+            </div>
+        </section>
+
+        <section class="food-section" id="restaurants" aria-labelledby="food-title">
+            <div class="food-copy"><p class="section-kicker">Leave room for lunch</p><h2 id="food-title">A good trip<br>tastes <em>like this.</em></h2><p>Skip the obvious. Find the tiny table, the local favorite, the meal you'll bring up for years.</p><a class="underlink" href="#restaurants">Find a table worth the trip <span aria-hidden="true">&#8594;</span></a><div class="food-footnote"><span class="food-rule"></span>Picked by people who live there</div></div>
+            <article class="food-feature"><img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1300&q=85" alt="Warm neighborhood restaurant with tables set for dinner"><div class="food-label"><div><span>NEIGHBORHOOD FAVORITE</span><h3>Osteria Lume</h3><p>Bologna, Italy <i></i> Handmade pasta</p></div><span class="food-score"><b>&#9733;</b> 4.9</span></div></article>
+        </section>
+
+        <section class="inspiration" id="experiences"><span class="inspiration-mark" aria-hidden="true">&#10022;</span><div><p class="section-kicker">Take the scenic route</p><h2 id="guides">The best plans leave space for a surprise.</h2></div><a href="#places" aria-label="Explore more travel ideas">&#8599;</a></section>
+    </main>
+
+    <footer class="site-footer"><div class="footer-content page-width"><a class="brand footer-brand" href="#home"><span class="brand-icon" aria-hidden="true"><i></i><b></b></span><span>trip<span>shower</span></span></a><p>Go far. Come back full of stories.</p><nav aria-label="Footer navigation"><a href="#places">Places</a><a href="#hotels">Hotels</a><a href="#restaurants">Food</a></nav><span class="copyright">&copy; 2026 TripShower</span></div></footer>
+</body>
+</html>
